@@ -4,16 +4,11 @@
       <header>
         <img id="header-logo" src="../assets/dc-logo.png" alt="DC LOGO" />
         <ul>
-          <li><a href="#">CHARACTERS</a></li>
-          <li><a href="#">COMICS</a></li>
-          <li><a href="#">MOVIES</a></li>
-          <li><a href="#">TV</a></li>
-          <li><a href="#">GAMES</a></li>
-          <li><a href="#">COLLECTIBLES</a></li>
-          <li><a href="#">VIDEOS</a></li>
-          <li><a href="#">FANS</a></li>
-          <li><a href="#">NEWS</a></li>
-          <li><a href="#">SHOP</a></li>
+          <li v-for="link in links" :key="link.text">
+            <a :class="{ active: link.active }" :href="link.url">{{
+              link.text
+            }}</a>
+          </li>
         </ul>
       </header>
     </div>
@@ -23,6 +18,62 @@
 <script>
 export default {
   name: "Header",
+  data() {
+    return {
+      links: [
+        {
+          text: "CHARACTERS",
+          url: "#",
+          active: false,
+        },
+        {
+          text: "COMICS",
+          url: "#",
+          active: true,
+        },
+        {
+          text: "MOVIES",
+          url: "#",
+          active: false,
+        },
+        {
+          text: "TV",
+          url: "#",
+          active: false,
+        },
+        {
+          text: "GAMES",
+          url: "#",
+          active: false,
+        },
+        {
+          text: "COLLECTIBLES",
+          url: "#",
+          active: false,
+        },
+        {
+          text: "VIDEOS",
+          url: "#",
+          active: false,
+        },
+        {
+          text: "FANS",
+          url: "#",
+          active: false,
+        },
+        {
+          text: "NEWS",
+          url: "#",
+          active: false,
+        },
+        {
+          text: "SHOP",
+          url: "#",
+          active: false,
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -45,6 +96,15 @@ header {
         font-weight: 700;
         text-decoration: none;
         color: #1c1c1c;
+        &:active,
+        &:hover {
+          color: dodgerblue;
+        }
+      }
+      .active {
+        color: dodgerblue;
+        padding-bottom: 44px;
+        border-bottom: 5px solid dodgerblue;
       }
     }
   }

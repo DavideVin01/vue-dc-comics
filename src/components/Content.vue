@@ -18,6 +18,7 @@ export default {
   text-align: center;
   background-image: url("../assets/jumbotron.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: top center;
   height: 40vh;
 }

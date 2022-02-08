@@ -96,6 +96,7 @@ li {
 }
 a {
   color: rgb(165, 165, 165);
+  font-size: 12px;
   text-decoration: none;
 }
 </style>

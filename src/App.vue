@@ -34,8 +34,6 @@ $white: #fff;
 $black: #1c1c1c;
 $darkgray: #303030;
 
-$font-marvel: "Marvel", sans-serif;
-
 // Presets
 * {
   margin: 0;
