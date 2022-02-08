@@ -4,16 +4,16 @@
       <header>
         <img id="header-logo" src="../assets/dc-logo.png" alt="DC LOGO" />
         <ul>
-          <li><a>CHARACTERS</a></li>
-          <li><a>COMICS</a></li>
-          <li><a>MOVIES</a></li>
-          <li><a>TV</a></li>
-          <li><a>GAMES</a></li>
-          <li><a>COLLECTIBLES</a></li>
-          <li><a>VIDEOS</a></li>
-          <li><a>FANS</a></li>
-          <li><a>NEWS</a></li>
-          <li><a>SHOP</a></li>
+          <li><a href="#">CHARACTERS</a></li>
+          <li><a href="#">COMICS</a></li>
+          <li><a href="#">MOVIES</a></li>
+          <li><a href="#">TV</a></li>
+          <li><a href="#">GAMES</a></li>
+          <li><a href="#">COLLECTIBLES</a></li>
+          <li><a href="#">VIDEOS</a></li>
+          <li><a href="#">FANS</a></li>
+          <li><a href="#">NEWS</a></li>
+          <li><a href="#">SHOP</a></li>
         </ul>
       </header>
     </div>
