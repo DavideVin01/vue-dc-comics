@@ -21,6 +21,8 @@ $blue: #0282f9;
 $white: #fff;
 $black: #1c1c1c;
 
+$font-marvel: "Marvel", sans-serif;
+
 // Presets
 * {
   margin: 0;
@@ -33,6 +35,10 @@ img {
 }
 
 // Utilities
+body {
+  background-color: $black;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1200px;
