@@ -14,7 +14,7 @@ export default {
 
 <style scoped lang="scss">
 #content {
-  padding: 20px;
+  padding: 50px;
   text-align: center;
 }
 h3 {

@@ -80,8 +80,7 @@ export default {
   background-image: url("../assets/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  //   height: 400px;
-  //   flex-grow: 1;
+  height: 400px;
   display: flex;
   color: #fff;
 }

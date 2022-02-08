@@ -32,7 +32,7 @@ header {
   display: flex;
   justify-content: space-between;
   #header-logo {
-    width: 100px;
+    width: 80px;
   }
   ul {
     display: flex;

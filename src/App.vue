@@ -4,7 +4,7 @@
     <Content />
     <Shop />
     <Links />
-    <!-- <Footer /> -->
+    <Footer />
   </div>
 </template>
 
@@ -13,6 +13,7 @@ import Header from "./components/Header.vue";
 import Content from "./components/Content.vue";
 import Shop from "./components/Shop.vue";
 import Links from "./components/Links.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
@@ -21,6 +22,7 @@ export default {
     Content,
     Shop,
     Links,
+    Footer,
   },
 };
 </script>
@@ -30,6 +32,7 @@ export default {
 $blue: #0282f9;
 $white: #fff;
 $black: #1c1c1c;
+$darkgray: #303030;
 
 $font-marvel: "Marvel", sans-serif;
 
@@ -46,7 +49,6 @@ img {
 
 // Utilities
 body {
-  background-color: #2e2e2e;
   font-family: "Segoe UI", "Open Sans", Helvetica, sans-serif;
 }
 
@@ -75,5 +77,8 @@ body {
 }
 .bg-black {
   background: #1c1c1c;
+}
+.bg-darkgray {
+  background: #303030;
 }
 </style>
