@@ -1,16 +1,19 @@
 <template>
   <div>
     <Header />
+    <Content />
   </div>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
+import Content from "./components/Content.vue";
 
 export default {
   name: "App",
   components: {
     Header,
+    Content,
   },
 };
 </script>
@@ -36,7 +39,8 @@ img {
 
 // Utilities
 body {
-  background-color: $black;
+  background-color: #2e2e2e;
+  font-family: "Segoe UI", "Open Sans", Helvetica, sans-serif;
 }
 
 .container {
@@ -57,12 +61,12 @@ body {
 
 // Background Colors
 .bg-blue {
-  background: $blue;
+  background: #0282f9;
 }
 .bg-white {
-  background: $white;
+  background: #fff;
 }
 .bg-black {
-  background: $black;
+  background: #1c1c1c;
 }
 </style>

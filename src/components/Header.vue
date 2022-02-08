@@ -28,7 +28,6 @@ export default {
 
 <style scoped lang="scss">
 header {
-  font-family: "Segoe UI", "Open Sans", Helvetica, sans-serif;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -44,6 +43,8 @@ header {
       a {
         cursor: pointer;
         font-weight: 700;
+        text-decoration: none;
+        color: #1c1c1c;
       }
     }
   }
