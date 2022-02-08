@@ -15,6 +15,7 @@ export default {
 <style scoped lang="scss">
 #content {
   padding: 20px;
+  text-align: center;
 }
 h3 {
   color: white;
