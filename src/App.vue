@@ -57,6 +57,10 @@ body {
   max-width: 1200px;
 }
 
+.shadow {
+  box-shadow: 0 2px 25px 0 black;
+}
+
 // Text Colors
 .text-blue {
   color: $blue;

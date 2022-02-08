@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white">
+  <div class="bg-white shadow">
     <div class="container">
       <header>
         <img id="header-logo" src="../assets/dc-logo.png" alt="DC LOGO" />

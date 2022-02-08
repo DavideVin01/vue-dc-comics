@@ -1,5 +1,5 @@
 <template>
-  <div id="shop" class="bg-blue">
+  <div id="shop" class="bg-blue shadow">
     <div class="container">
       <ul>
         <li>
@@ -50,7 +50,6 @@ export default {
 #shop {
   padding: 30px;
   color: #fff;
-  box-shadow: 0 2px 25px 0 black;
 }
 
 ul {
