@@ -3,6 +3,8 @@
     <Header />
     <Content />
     <Shop />
+    <Links />
+    <!-- <Footer /> -->
   </div>
 </template>
 
@@ -10,6 +12,7 @@
 import Header from "./components/Header.vue";
 import Content from "./components/Content.vue";
 import Shop from "./components/Shop.vue";
+import Links from "./components/Links.vue";
 
 export default {
   name: "App",
@@ -17,6 +20,7 @@ export default {
     Header,
     Content,
     Shop,
+    Links,
   },
 };
 </script>

@@ -32,7 +32,7 @@
         <li>
           <a href="#">
             <img src="../assets/buy-dc-power-visa.svg" alt="" />
-            <span class="li-text">DIGITAL COMICS</span>
+            <span class="li-text">DC POWER VISA</span>
           </a>
         </li>
       </ul>
