@@ -1,8 +1,6 @@
 <template>
   <div id="content" class="bg-black">
-    <div class="container">
-      <!-- <h3>CONTENT GOES HERE</h3> -->
-    </div>
+    <div class="container"></div>
   </div>
 </template>
 

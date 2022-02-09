@@ -2,38 +2,14 @@
   <div id="shop" class="bg-blue shadow">
     <div class="container">
       <ul>
-        <li>
-          <a href="#">
+        <li v-for="item in items" :key="item.text">
+          <figure role="button">
             <img
-              src="../assets/buy-comics-digital-comics.png"
-              alt="Digital Comics"
+              :src="require(`../assets/${item.url}`)"
+              :alt="item.description"
             />
-            <span class="li-text">DIGITAL COMICS</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="../assets/buy-comics-merchandise.png" alt="" />
-            <span class="li-text">DC MERCHANDISE</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="../assets/buy-comics-subscriptions.png" alt="" />
-            <span class="li-text">SUBSCRIPTION</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="../assets/buy-comics-shop-locator.png" alt="" />
-            <span class="li-text">COMIC SHOP LOCATOR</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="../assets/buy-dc-power-visa.svg" alt="" />
-            <span class="li-text">DC POWER VISA</span>
-          </a>
+            <span class="li-text">{{ item.text }}</span>
+          </figure>
         </li>
       </ul>
     </div>
@@ -43,6 +19,37 @@
 <script>
 export default {
   name: "Shop",
+  data() {
+    return {
+      items: [
+        {
+          text: "DIGITAL COMICS",
+          description: "DIGITAL COMICS",
+          url: "buy-comics-digital-comics.png",
+        },
+        {
+          text: "DC MERCHANDISE",
+          description: "DC MERCHANDISE",
+          url: "buy-comics-merchandise.png",
+        },
+        {
+          text: "SUBSCRIPTION",
+          description: "SUBSCRIPTION",
+          url: "buy-comics-subscriptions.png",
+        },
+        {
+          text: "COMIC SHOP LOCATOR",
+          description: "COMIC SHOP LOCATOR",
+          url: "buy-comics-shop-locator.png",
+        },
+        {
+          text: "DC POWER VISA",
+          description: "DC POWER VISA",
+          url: "buy-dc-power-visa.svg",
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -58,11 +65,12 @@ ul {
   margin-bottom: 0;
   li {
     list-style-type: none;
-    a {
+    figure {
       display: flex;
       align-items: center;
-      text-decoration: none;
       color: #fff;
+      padding-right: 10px;
+      margin-bottom: 0;
     }
     img {
       max-width: 60px;
