@@ -3,7 +3,7 @@
     <div class="container">
       <ul>
         <li v-for="item in items" :key="item.text">
-          <figure role="button">
+          <figure role="button" class="grow">
             <img
               :src="require(`../assets/${item.url}`)"
               :alt="item.description"
@@ -69,14 +69,28 @@ ul {
       display: flex;
       align-items: center;
       color: #fff;
-      padding-right: 10px;
       margin-bottom: 0;
+      font-weight: 500;
     }
     img {
       max-width: 60px;
       height: 50px;
       padding-right: 10px;
     }
+  }
+}
+// .drop-shadow {
+//   box-shadow: 0;
+//   transition: box-shadow 1s;
+//   &:hover {
+//     box-shadow: 0px 0px 2px 0 rgb(81, 177, 255);
+//     transition: box-shadow 0.3s ease-in-out;
+//   }
+// }
+.grow {
+  transition: scale 0.5s 0.2s ease;
+  &:hover {
+    transform: scale(1.1);
   }
 }
 </style>

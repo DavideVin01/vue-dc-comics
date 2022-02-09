@@ -4,7 +4,7 @@
       <div class="main-title">CURRENT SERIES</div>
       <div v-for="(comicCard, index) in comicCards" :key="index" class="figure">
         <div class="d-flex flex-column" role="button">
-          <img :src="comicCard.thumb" :alt="comicCard.type" />
+          <img class="grow" :src="comicCard.thumb" :alt="comicCard.type" />
           <div class="text-uppercase">{{ comicCard.series }}</div>
         </div>
       </div>
@@ -149,6 +149,12 @@ export default {
   }
   div {
     font-size: 13px;
+  }
+}
+.grow {
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
   }
 }
 </style>
