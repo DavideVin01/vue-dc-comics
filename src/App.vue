@@ -2,10 +2,10 @@
   <div>
     <Header />
     <Content />
+    <ComicCard />
     <Shop />
     <Links />
     <Footer />
-    <ComicCard />
   </div>
 </template>
 

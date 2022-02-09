@@ -1,8 +1,16 @@
 <template>
-  <div id="comic-card"></div>
+  <div id="comic-card">
+    <div class="container">
+      <div v-for="(comicCard, index) in comicCards" :key="index" class="card">
+        <img :src="comicCard.thumb" :alt="comicCard.type" />
+        <div>{{ comicCard.series }}</div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
+import "../assets/sass/_var.scss";
 export default {
   name: "ComicCard",
   data() {
@@ -98,5 +106,10 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+#comic-card {
+  background-color: #1c1c1c;
+  padding: 50px;
+  color: #fff;
+}
 </style>
