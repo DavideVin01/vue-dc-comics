@@ -3,7 +3,7 @@
     <div class="container">
       <div class="main-title">CURRENT SERIES</div>
       <div v-for="(comicCard, index) in comicCards" :key="index" class="figure">
-        <div class="d-flex flex-column">
+        <div class="d-flex flex-column" role="button">
           <img :src="comicCard.thumb" :alt="comicCard.type" />
           <div class="text-uppercase">{{ comicCard.series }}</div>
         </div>
@@ -130,7 +130,7 @@ export default {
   }
 }
 .container {
-  padding: 40px 20px;
+  padding: 30px 20px;
   #load-more {
     color: #fff;
     background-color: dodgerblue;

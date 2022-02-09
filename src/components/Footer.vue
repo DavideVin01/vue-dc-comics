@@ -5,7 +5,7 @@
         <div class="column">
           <button><a>SIGN-UP NOW!</a></button>
         </div>
-        <div class="column d-flex align-items-center">
+        <div class="column d-flex align-items-center" role="button">
           <h3>FOLLOW US</h3>
           <ul>
             <li><img src="../assets/footer-facebook.png" alt="Facebook" /></li>
@@ -40,6 +40,8 @@ export default {
   justify-content: space-between;
   h3 {
     color: dodgerblue;
+    font-size: 22px;
+    margin-bottom: 0;
   }
 }
 footer {
@@ -57,13 +59,9 @@ ul {
 button {
   background-color: transparent;
   border: 1px solid dodgerblue;
+  margin-left: 40px;
   padding: 15px;
   color: #fff;
   font-size: 18px;
 }
 </style>
-
-
-
-
-
