@@ -79,14 +79,6 @@ ul {
     }
   }
 }
-// .drop-shadow {
-//   box-shadow: 0;
-//   transition: box-shadow 1s;
-//   &:hover {
-//     box-shadow: 0px 0px 2px 0 rgb(81, 177, 255);
-//     transition: box-shadow 0.3s ease-in-out;
-//   }
-// }
 .grow {
   transition: scale 0.5s 0.2s ease;
   &:hover {

@@ -9,7 +9,7 @@
         </div>
       </div>
       <div id="btn-container" class="d-flex justify-content-center">
-        <button id="load-more" type="button">LOAD MORE</button>
+        <button id="load-more" class="grow" type="button">LOAD MORE</button>
       </div>
     </div>
   </div>
