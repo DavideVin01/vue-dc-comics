@@ -55,19 +55,20 @@ export default {
 ul {
   display: flex;
   justify-content: space-around;
-}
-li {
-  list-style-type: none;
-  a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #fff;
-  }
-  img {
-    max-width: 60px;
-    height: 50px;
-    padding-right: 10px;
+  margin-bottom: 0;
+  li {
+    list-style-type: none;
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #fff;
+    }
+    img {
+      max-width: 60px;
+      height: 50px;
+      padding-right: 10px;
+    }
   }
 }
 </style>

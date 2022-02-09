@@ -73,7 +73,7 @@ export default {
 }
 
 .links-box {
-  padding: 60px 20px;
+  padding: 40px 20px;
 }
 
 #links {
@@ -87,12 +87,12 @@ export default {
 div {
   display: flex;
 }
-h3 {
-  padding: 0 0 10px 0;
-}
 
 li {
   list-style-type: none;
+  h3 {
+    font-size: 18px;
+  }
 }
 a {
   color: rgb(165, 165, 165);

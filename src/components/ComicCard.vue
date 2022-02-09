@@ -1,9 +1,12 @@
 <template>
   <div id="comic-card">
     <div class="container">
-      <div v-for="(comicCard, index) in comicCards" :key="index" class="card">
-        <img :src="comicCard.thumb" :alt="comicCard.type" />
-        <div>{{ comicCard.series }}</div>
+      <div class="main-title">CURRENT SERIES</div>
+      <div v-for="(comicCard, index) in comicCards" :key="index" class="figure">
+        <div class="d-flex flex-column">
+          <img :src="comicCard.thumb" :alt="comicCard.type" />
+          <div class="text-uppercase">{{ comicCard.series }}</div>
+        </div>
       </div>
     </div>
   </div>
@@ -109,7 +112,32 @@ export default {
 <style lang="scss" scoped>
 #comic-card {
   background-color: #1c1c1c;
-  padding: 50px;
   color: #fff;
+  position: relative;
+  .main-title {
+    position: absolute;
+    top: -25px;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 20px;
+    padding: 10px 25px;
+    font-weight: bold;
+    background-color: dodgerblue;
+    padding-bottom: 10px;
+  }
+}
+.container {
+  padding: 40px 20px;
+}
+.figure {
+  width: calc(100% / 6);
+  padding: 15px 30px;
+  img {
+    margin-bottom: 10px;
+    height: 200px;
+  }
+  div {
+    font-size: 13px;
+  }
 }
 </style>

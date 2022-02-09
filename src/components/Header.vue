@@ -103,7 +103,7 @@ header {
       }
       .active {
         color: dodgerblue;
-        padding-bottom: 44px;
+        padding-bottom: 53px;
         border-bottom: 5px solid dodgerblue;
       }
     }

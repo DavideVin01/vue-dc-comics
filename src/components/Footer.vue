@@ -2,10 +2,10 @@
   <footer class="bg-darkgray">
     <div class="container">
       <div class="flex">
-        <div class="col">
+        <div class="column">
           <button><a>SIGN-UP NOW!</a></button>
         </div>
-        <div class="col">
+        <div class="column d-flex align-items-center">
           <h3>FOLLOW US</h3>
           <ul>
             <li><img src="../assets/footer-facebook.png" alt="Facebook" /></li>
@@ -35,10 +35,9 @@ export default {
   display: flex;
   justify-content: space-between;
 }
-.col {
-  justify-content: space-between;
+.column {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   h3 {
     color: dodgerblue;
   }
@@ -49,6 +48,7 @@ footer {
 ul {
   display: flex;
   padding-left: 15px;
+  margin-bottom: 0;
   li {
     list-style-type: none;
     padding: 0 10px;
@@ -58,10 +58,8 @@ button {
   background-color: transparent;
   border: 1px solid dodgerblue;
   padding: 15px;
-  a {
-    color: #fff;
-    font-size: 18px;
-  }
+  color: #fff;
+  font-size: 18px;
 }
 </style>
 
