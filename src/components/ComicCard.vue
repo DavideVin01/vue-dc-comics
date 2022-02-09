@@ -8,6 +8,9 @@
           <div class="text-uppercase">{{ comicCard.series }}</div>
         </div>
       </div>
+      <div id="btn-container" class="d-flex justify-content-center">
+        <button id="load-more" type="button">LOAD MORE</button>
+      </div>
     </div>
   </div>
 </template>
@@ -128,6 +131,14 @@ export default {
 }
 .container {
   padding: 40px 20px;
+  #load-more {
+    color: #fff;
+    background-color: dodgerblue;
+    padding: 5px 50px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid dodgerblue;
+  }
 }
 .figure {
   width: calc(100% / 6);
